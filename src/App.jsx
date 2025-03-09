@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import MyButton from './components/UI/button/MyButton'
 
 
 function App() {
@@ -7,7 +8,13 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+    <div>
+      <form>
+        <input type='text' placeholder='Логин'></input>
+        <input type='text' placeholder='Пароль'></input>
+        <MyButton>Войти</MyButton>
+      </form>
+    </div>
     </>
   )
 }
