@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import MyButton from './components/UI/button/MyButton'
+import MyInput from './components/UI/input/MyInput'
 
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
     <>
     <div>
       <form>
-        <input type='text' placeholder='Логин'></input>
-        <input type='text' placeholder='Пароль'></input>
+        <MyInput type='text' placeholder='Логин'></MyInput>
+        <MyInput type='text' placeholder='Пароль'></MyInput>
         <MyButton>Войти</MyButton>
       </form>
     </div>
