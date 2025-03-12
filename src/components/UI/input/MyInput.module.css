@@ -1,5 +1,5 @@
 .myInput {
-    width: 100%;
+    width: 70%;
     height: 50px;
     background: transparent;
     border: none;
@@ -7,4 +7,11 @@
     font-size: 1em;
     padding: 0 35px 0 5px;
     color: #fff;
+    border-bottom: 2px solid #fff;
+   
+}
+
+.myInput:focus{
+    transition: 0.5s;
+    transform: translateY(-50%)
 }
