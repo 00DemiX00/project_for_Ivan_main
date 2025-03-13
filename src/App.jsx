@@ -10,14 +10,16 @@ function App() {
   return (
     <>
     <div>
-      <form>
-        <MyInput type='text' placeholder='Логин'></MyInput>
-        <MyInput type='text' placeholder='Пароль'></MyInput>
+       <form>
+        <MyInput></MyInput>
         <MyButton>Войти</MyButton>
       </form>
     </div>
     </>
+    
   )
+  
 }
+
 
 export default App 

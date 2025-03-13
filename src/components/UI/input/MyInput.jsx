@@ -1,10 +1,23 @@
-import React from "react";
-import classes from './MyInput.module.css'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
 
-const MyInput = (props) => {
-    return(
-        <input className={classes.myInput} {...props}></input>
-    );
-};
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+}));
 
-export default MyInput
+export default function BasicTextFields() {
+  const classes = useStyles();
+
+  return (
+    <form className={classes.root} noValidate autoComplete="off">
+      <TextField id="standard-basic" label="Логин"/>
+      <TextField id="standard-basic" label="Пароль" />
+    </form>
+  );
+}

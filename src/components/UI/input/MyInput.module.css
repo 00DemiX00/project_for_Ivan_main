@@ -1,4 +1,5 @@
 .myInput {
+    appearance: none;
     width: 70%;
     height: 50px;
     background: transparent;
@@ -11,7 +12,8 @@
    
 }
 
-.myInput:focus{
-    transition: 0.5s;
-    transform: translateY(-50%)
+.myInput:focus ~ label{
+    top: -5px;
+    transform: translateY(5px);
 }
+
