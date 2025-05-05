@@ -5,7 +5,7 @@
         font-size: 1em;
         font-weight: 500;
         font-family: inherit;
-        background-color:  #646cffaa;
+        background-color:  #000000aa;
         cursor: pointer;
         transition: filter 0.25s;
         display: flex;
@@ -13,6 +13,6 @@
         margin-left: 190px;
 }
 
-.myBtn:hover {
-    filter: drop-shadow(0 0 1.2em #646cffaa);
-  }
+.myBtn:hover{
+        filter: drop-shadow(0 0 1em  #535bf2);
+}

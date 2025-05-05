@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import MyButton from './components/UI/button/MyButton'
-import MyInput from './components/UI/input/MyInput'
+import MyForm from './components/UI/form/MyForm'
 
 
 function App() {
@@ -10,10 +10,9 @@ function App() {
   return (
     <>
     <div>
-       <form>
-        <MyInput></MyInput>
+        <MyForm></MyForm>
+        <br></br>
         <MyButton>Войти</MyButton>
-      </form>
     </div>
     </>
     
