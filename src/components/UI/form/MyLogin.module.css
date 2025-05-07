@@ -1,0 +1,44 @@
+.MyInput {
+    appearance: none;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    color: #fffefe;
+    border-bottom: 2px solid gray;
+    transition: border-color 0.3s;
+    position: relative;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.MyInput:focus {
+    border-color: #535bf2;
+}
+
+.TextField {
+    width: 350px;
+    position: relative;
+}
+
+.MyPlaceholder {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    pointer-events: none;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1em;
+    transform-origin: left;
+    transition: top 0.2s, transform 0.2s, color 0.2s;
+}
+
+.MyInput:focus + .MyPlaceholder, .MyInput:not(:focus):valid + .MyPlaceholder{
+    top: -15px;
+    transform: scale(.85);
+    color: #535bf2;
+}
