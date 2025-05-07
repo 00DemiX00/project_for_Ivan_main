@@ -9,14 +9,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-        <MyLogin></MyLogin>
-        <br></br>
-        <MyPassword></MyPassword>
-        <br></br>
-        <MyButton>Войти</MyButton>
-    </div>
-    
+        <div>
+          <MyLogin></MyLogin>
+          <br></br>
+          <MyPassword></MyPassword>
+          <MyButton>Войти</MyButton>
+        </div>
   )
   
 }
