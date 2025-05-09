@@ -1,0 +1,89 @@
+.MyInp {
+    appearance: none;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    color: #fffefe;
+    border-bottom: 2px solid gray;
+    transition: border-color 0.3s;
+    position: relative;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.MyInp:focus {
+    border-color: #535bf2;
+}
+
+.MyInp1 {
+    appearance: none;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    color: #fffefe;
+    border-bottom: 2px solid gray;
+    transition: border-color 0.3s;
+    position: relative;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.MyInp1:focus {
+    border-color: #535bf2;
+}
+
+.TextField {
+    width: 350px;
+    position: relative;
+    top: 250px;
+    left: 370px;
+}
+
+.MyPlaceholder {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    pointer-events: none;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1em;
+    transform-origin: left;
+    transition: top 0.2s, transform 0.2s, color 0.2s;
+}
+
+.MyPlaceholder1 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    pointer-events: none;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1em;
+    transform-origin: left;
+    transition: top 0.2s, transform 0.2s, color 0.2s;
+}
+
+.MyInp1:focus + .MyPlaceholder1, .MyInp1:not(:focus):valid + .MyPlaceholder1{
+    top: 52px;
+    transform: scale(.85);
+    color: #535bf2;
+}
+
+.MyInp:focus + .MyPlaceholder, .MyInp:not(:focus):valid + .MyPlaceholder{
+    top: -15px;
+    transform: scale(.85);
+    color: #535bf2;
+}
+
+
+

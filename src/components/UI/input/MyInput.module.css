@@ -1,4 +1,4 @@
-.MyInput {
+.MyInp {
     appearance: none;
     width: 100%;
     padding: 10px 0;
@@ -15,7 +15,7 @@
     font-size: 1em;
 }
 
-.MyInput:focus {
+.MyInp:focus {
     border-color: #535bf2;
 }
 
@@ -39,7 +39,7 @@
     transition: top 0.2s, transform 0.2s, color 0.2s;
 }
 
-.MyInput:focus + .MyPlaceholder, .MyInput:not(:focus):valid + .MyPlaceholder{
+.MyInp:focus + .MyPlaceholder, .MyInp:not(:focus):valid + .MyPlaceholder{
     top: -15px;
     transform: scale(.85);
     color: #535bf2;
