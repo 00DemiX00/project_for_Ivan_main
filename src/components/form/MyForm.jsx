@@ -4,8 +4,8 @@ import MyButton from "../UI/button/MyButton";
 import axios from "axios";
 
 const MyForm = (props) => {
-    const [inputValue, setInputValue] = useState()
-    const [inputValue1, setInputValue1] = useState()
+    const [inputValue, setInputValue] = useState('')
+    const [inputValue1, setInputValue1] = useState('')
 
     return (
         <div {...props} className={classes.TextField}>
