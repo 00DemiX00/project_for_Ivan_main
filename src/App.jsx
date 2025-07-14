@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import MyInput from './components/UI/input/MyInput'
-import MyButton from './components/UI/button/MyButton'
 import MyForm from './components/form/MyForm'
 
 
